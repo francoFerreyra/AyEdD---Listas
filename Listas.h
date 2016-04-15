@@ -21,7 +21,10 @@ public:
     lista();
     lista(char p);
     ~lista();
-    bool esVacio();
+    bool esVacio()
+    {
+        return primero== NULL;
+    }
 
     int eliminar(int pos);
     void agregarincio(char p);
